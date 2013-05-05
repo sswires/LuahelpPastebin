@@ -1,0 +1,15 @@
+﻿@model LuahelpPastebin.Models.Paste
+@{
+    ViewBag.Title = "New Paste";
+}
+
+<h2>New Paste</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(m => m.Code)
+
+    <div class="actions">
+        <input type="submit" value="Submit Code" />
+    </div>
+}
